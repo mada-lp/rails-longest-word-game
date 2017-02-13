@@ -1,0 +1,9 @@
+<h1>******** Welcome to the longest word-game !********</h1>
+<h2>Here is your grid:</h2>
+<%= @generate_grid %>
+
+<form action="score">
+  <input type="text" id="question" name="guess" placeholder="do your best">
+  <input type="hidden" name="start_date" value="<%= Time.now %>">
+  <input type="submit" value="Go on!">
+</form>
